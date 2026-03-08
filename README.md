@@ -210,10 +210,6 @@ MIT License
 
 ---
 
-## ❤️ 作者 / Author
-
-**mingxing0769（建平）**
-
 欢迎提交 Issue 或 PR，一起完善 MCP 生态。
 ```
 
