@@ -56,7 +56,7 @@ git clone https://github.com/mingxing0769/image-bridge
 cd image-bridge
 python -m venv .venv
 source .venv/bin/activate  # Windows 使用 .venv\Scripts\activate
-pip install mcp
+pip install mcp aiohttp
 ```
 
 ---
@@ -66,11 +66,12 @@ pip install mcp
 在你的 MCP 客户端配置中加入：
 
 ```json
-{
-  "name": "image-bridge",
-  "command": "python",
-  "args": ["server.py"]
-}
+"image-bridge": {
+      "command": "E:/Python/image-bridge/.venv/Scripts/python.exe",
+      "args": [
+        "E:/Python/image-bridge/server.py"
+      ]
+    }
 ```
 
 然后在 LLM 调用链中：
